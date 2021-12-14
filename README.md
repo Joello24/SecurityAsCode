@@ -1,5 +1,8 @@
 # SecurityAsCode
 
+This project is intended to be used as a demostration of Security as Code. 
+Source credit to Jason Watmore https://github.com/cornflourblue 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
 ## Development server
