@@ -37,19 +37,13 @@ export class FakeBackendInterceptor implements HttpInterceptor {
              const { username, password } = body;
              const user = users.find(x => x.username === username && x.password === password);
              
-             if (!user) return ok({
+             if (!user) return error("Invalid input");
+             return ok({
                 id: user.id,
                 username: user.username,
                 firstName: user.firstName,
                 lastName: user.lastName
             })
-             
-             return ok({
-                 id: user.id,
-                 username: user.username,
-                 firstName: user.firstName,
-                 lastName: user.lastName
-             })
             
         }
 
